@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="logs.css">
+</head>
+<body>
+    <div class="navbar" >
+    <div class="logo">Product Management & User Registration System</div>
+    <div class="nav-links">
+      <a href="MainPage.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="Register.html">Register</a>
+      <a href="Admin.php">Admin</a>
+    </div>
+  </div>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="login.php" method="POST">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email" required>
+
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter Username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+            <div class="button-container">
+                <button type="submit" name="login" class="login-btn">Login</button>
+            </div>
+
+            <div class="bottom-buttons">
+                <a href="Register.html" class="link-btn">Register</a>
+                <a href="forgot_password.html" class="link-btn">Forgot Password</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
